@@ -1,0 +1,113 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Mijn cijfers · Na de Saldering</title><meta name="description" content="Een echte jaarafrekening met zonnepanelen, thuisbatterij en dynamisch contract: afname, teruglevering, kosten per maand."><meta name="claude:viewport-fit-sides" content="cover"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"><link rel="stylesheet" href="style.css"><script>document.documentElement.classList.add("js")</script></head><body><a class="skip" href="#main">Naar de inhoud</a>
+<div class="bar"><div class="wrap">
+  <div class="ticker mono" aria-label="Prijzen bij mij thuis, momentopname">
+    <span><i class="dot"></i>Stroom nu <b>€ 0,31</b>/kWh</span>
+    <span>Gas vandaag <b>€ 1,85</b>/m³</span>
+    <span class="t-src">Zonneplan · 17 okt 06:06</span>
+  </div>
+  <header class="top">
+    <a class="logo" href="index.html"><i></i>Na de Saldering</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu"><span></span>Menu</button>
+    <nav class="top-nav" id="menu" aria-label="Hoofdmenu"><a href="salderen.html">Salderen</a><a href="mijn-cijfers.html" aria-current="page">Mijn cijfers</a><a href="home-assistant.html">Home Assistant</a><a href="logboek.html">Logboek</a><a href="over.html">Over mij</a><a href="samenwerken.html">Samenwerken</a></nav>
+  </header>
+</div></div><div class="wrap"><main id="main"><div class="crumbs"><a href="index.html">Home</a> / Mijn cijfers</div><div class="phero">
+  <div><div class="eyebrow">Mijn cijfers</div><h1>Mijn rekening, <em>open op tafel</em></h1><p class="lede">Leveringsjaar 1 augustus 2025 tot 1 augustus 2026, dynamisch contract bij Zonneplan. Ik krijg niets van ze om dat te noemen. Alle getallen komen van mijn eigen jaarafrekening, maandfacturen en Home Assistant.</p></div>
+  <aside class="kpi"><div class="eyebrow">Werkelijke energiekosten</div><b data-count="1878" data-prefix="€ ">€ 0</b><p>over een heel jaar, stroom en gas samen, voor een huishouden van zes</p></aside>
+</div><section id="jaar"><div class="sec-head rv"><div class="eyebrow">Het jaar</div><h2>Wat ik afnam en wat ik teruggaf</h2></div><div class="tiles rv">
+  <div class="tile"><span class="eyebrow">Afgenomen</span><b class="mono" data-count="6857">0</b><small>kWh van het net</small></div>
+  <div class="tile sun"><span class="eyebrow">Teruggeleverd</span><b class="mono" data-count="1847">0</b><small>kWh naar het net</small></div>
+  <div class="tile"><span class="eyebrow">Gas</span><b class="mono" data-count="482">0</b><small>m³, nog vóór de warmtepomp</small></div>
+  <div class="tile"><span class="eyebrow">Werkelijke kosten</span><b class="mono" data-count="1878" data-prefix="€ ">0</b><small>stroom € 963,81 + gas € 914,60</small></div>
+</div>
+<figure class="bars-card rv"><div class="chart-head"><strong>Per maand: wat ik afnam en wat ik teruggaf</strong><span class="eyebrow mono">kWh</span></div>
+  <div class="bars" id="bars" role="img" aria-label="Staafdiagram per maand van augustus 2025 tot juli 2026. Afname is in de winter het hoogst, rond 800 kWh per maand. Teruglevering is in de zomer het hoogst, tot 421 kWh in juni."></div>
+  <div class="legend"><span><i style="background:var(--ink)"></i>Afgenomen</span><span><i style="background:var(--sun)"></i>Teruggeleverd</span></div></figure>
+<div class="insight rv"><div><div class="eyebrow">Wat ik ontdekte</div><h3>Bij mij scheelt de saldering vooral energiebelasting</h3>
+  <p>Op mijn dynamisch contract krijg ik voor teruggeleverde stroom gewoon de marktprijs. Dat stuk wordt nu al niet weggestreept. De saldering zit bij mij in de energiebelasting: die betaalde ik over 5.010 kWh in plaats van over 6.857 kWh.</p></div>
+  <div class="sum mono" aria-label="Rekensom"><div><span>Afgenomen (kWh)</span><span>6.857 kWh</span></div><div><span>Teruggeleverd</span><span>− 1.847 kWh</span></div><div class="tot"><span>Belast</span><span>5.010 kWh</span></div><div class="gap"></div>
+  <div><span>1.847 kWh × € 0,1108</span><span></span></div><div class="tot big"><span>Nu weggestreept</span><span>± € 205</span></div>
+  <p class="sum-note">Tarief energiebelasting 2026 inclusief btw, van mijn eigen nota. Het tarief voor 2027 weet ik nog niet, dus dit is een schatting.</p></div></div></section><section id="warmte"><div class="sec-head rv"><div class="eyebrow">Gas of warmtepomp</div><h2>Wat kost een kWh warmte?</h2></div><div class="heat rv" id="heat">
+  <div class="heat-top">
+    <div class="heat-side gas"><div class="eyebrow">Cv-ketel · Intergas 36/30</div><div class="heat-price mono"><span id="h-gas-k">€ 0,00</span><small>per kWh warmte</small></div>
+      <div class="heat-bar"><i id="h-gas-bar"></i></div><p class="mono">gas <b>€ 1,83</b>/m³ ÷ 8,8 kWh warmte per m³</p></div>
+    <div class="heat-vs mono" aria-hidden="true">vs</div>
+    <div class="heat-side wp"><div class="eyebrow">Warmtepomp · Quatt Duo</div><div class="heat-price mono"><span id="h-wp-k">€ 0,00</span><small>per kWh warmte</small></div>
+      <div class="heat-bar"><i id="h-wp-bar"></i></div><p class="mono">stroom <b id="h-el-p">€ 0,39</b>/kWh ÷ COP <b id="h-cop-t">4,0</b></p></div>
+  </div>
+  <div class="heat-verdict" aria-live="polite"><b id="h-verdict">0%</b><span id="h-verdict-t">goedkoper met de warmtepomp</span></div>
+  <div class="heat-ctl">
+    <div><div class="eyebrow">Stroomprijs</div><div class="seg-ctl three" id="h-el" style="margin-top:8px">
+      <button type="button" data-v="0.3301" aria-pressed="false">Goedkoopste uur</button><button type="button" data-v="0.3883" aria-pressed="true">Gemiddeld</button><button type="button" data-v="0.4529" aria-pressed="false">Duurste uur</button></div></div>
+    <label for="h-cop"><span class="eyebrow">Rendement warmtepomp (COP): <b class="mono" id="h-cop-v">4,0</b></span>
+      <input type="range" id="h-cop" class="slide" min="2" max="5.5" step="0.1" value="4"></label>
+  </div>
+  <div class="heat-jan"><div><div class="eyebrow">Januari 2026, opnieuw gerekend</div><p>Toen stookte ik 123 m³ gas. Dezelfde warmte met de prijzen van vandaag:</p></div>
+    <div class="jan-nums mono"><div><span>Intergas</span><b id="h-jan-gas">€ 0</b></div><div><span>Warmtepomp</span><b id="h-jan-wp">€ 0</b></div></div></div>
+  <p class="note">Prijzen van 16 oktober 2026 bij Zonneplan, inclusief belasting, zonder vaste kosten. Hoeveel warmte een m³ gas in de ketel geeft (8,8 kWh) en de COP zijn vuistregels, geen metingen. Hoe goed mijn warmtepomp het echt doet, meet ik deze winter in Home Assistant. Omslagpunt: bij een COP onder <b id="h-break">1,9</b> is gas goedkoper.</p>
+</div></section><section id="batterij"><div class="sec-head rv"><div class="eyebrow">De batterij</div><h2>Zelf gebruiken is het nieuwe wegstrepen</h2></div><div class="flows rv" id="flows" style="margin-top:0">
+  <div class="flows-head"><div><div class="eyebrow">Wat mijn batterij doet · 2026 tot half oktober</div><h3>Waar mijn stroom vandaan komt en naartoe gaat</h3></div><span class="eyebrow mono">uit de app van mijn thuisbatterij</span></div>
+  <div class="flow"><div class="flow-lbl"><b>Zon</b><span class="mono">3,66 MWh opgewekt</span></div>
+    <div class="stack" role="img" aria-label="Zonnestroom: 52 procent naar de batterij, 32 procent direct naar het huis, 16 procent naar het net."><span class="seg s-bat" data-w="52.5"><em><span class="w">batterij </span>1,92</em></span><span class="seg s-house" data-w="31.9"><em><span class="w">huis </span>1,17</em></span><span class="seg s-grid" data-w="15.6"><em><span class="w">net </span>0,57</em></span></div></div>
+  <div class="flow"><div class="flow-lbl"><b>Huis</b><span class="mono">6,98 MWh verbruikt</span></div>
+    <div class="stack" role="img" aria-label="Verbruik: 17 procent direct van de zon, 39 procent uit de batterij, 45 procent van het net."><span class="seg s-sun" data-w="16.8"><em><span class="w">zon </span>1,17</em></span><span class="seg s-bat" data-w="38.7"><em><span class="w">batterij </span>2,70</em></span><span class="seg s-grid" data-w="44.5"><em><span class="w">net </span>3,10</em></span></div></div>
+  <div class="selfuse"><b class="mono">84%</b><span>van mijn zonnestroom gebruik ik zelf, direct of via de batterij. Zelf gebruiken is het nieuwe wegstrepen.</span></div>
+  <div class="flow-legend"><span><i class="s-sun"></i>Zon</span><span><i class="s-bat"></i>Batterij</span><span><i class="s-house"></i>Huis</span><span><i class="s-grid"></i>Net</span></div>
+  <div class="trade"><div class="trade-num"><b class="mono">± 2,2</b><span>MWh laadde de batterij uit het net</span></div><div class="trade-num"><b class="mono">± 1,3</b><span>MWh leverde de batterij terug aan het net</span></div>
+    <p>Tot half oktober handelde mijn batterij: laden op goedkope uren, terugleveren op dure uren. Daarom kreeg ik in de zomer meer per teruggeleverde kWh dan ik betaalde. Na 2027 levert dat minder op, want over stroom die ik uit het net laad, betaal ik volle energiebelasting, en bij terugleveren krijg ik die niet meer terug. Sinds 13 oktober 2026 staat de batterij daarom op eerst zelf gebruiken, en terugleveren heb ik geblokkeerd. Wat dat verschil doet, houd ik bij in deel 04.</p></div>
+  <p class="note">Laden uit het net en terugleveren door de batterij heb ik afgeleid: opgeladen 4,16 MWh min 1,92 MWh van de zon, en ontladen 4,0 MWh min 2,7 MWh naar het huis. Het klopt met mijn totale import (5,35 MWh) en export (1,87 MWh).</p>
+</div></section><section id="maand"><div class="sec-head rv"><div class="eyebrow">Per maand</div><h2>Elke factuur, zodra hij binnen is</h2></div><div class="monthlog rv" style="margin-top:0">
+  <div class="flows-head"><div><div class="eyebrow">Maandlog</div><h3>Elke maand mijn echte verbruik</h3></div><span class="eyebrow mono">jaarafrekening + maandfacturen</span></div>
+  <div class="mtable" role="table" aria-label="Verbruik per maand">
+    <div class="mrow mhead" role="row"><span role="columnheader">Maand</span><span role="columnheader">Afgenomen</span><span role="columnheader">Teruggeleverd</span><span role="columnheader">Gas</span><span role="columnheader">Wat er speelde</span></div>
+    <div class="mrow" role="row"><span role="cell"><b>aug 2025</b></span><span role="cell" class="mono v2"><span>317 kWh</span><span>€ 43,05</span></span><span role="cell" class="mono v2"><span>355 kWh</span><span>€ 20,93</span></span><span role="cell" class="mono v1"><span>10 m³</span></span><span role="cell">Nog zonder batterij. Veel teruggeleverd, maar gemiddeld kreeg ik er maar 6 cent per kWh voor.</span></div>
+    <div class="mrow" role="row"><span role="cell"><b>sep 2025</b></span><span role="cell" class="mono v2"><span>399 kWh</span><span>€ 58,94</span></span><span role="cell" class="mono v2"><span>259 kWh</span><span>€ 18,02</span></span><span role="cell" class="mono v1"><span>11 m³</span></span><span role="cell">Zelfde verhaal: de zon levert, de opbrengst valt tegen.</span></div>
+    <div class="mrow" role="row"><span role="cell"><b>okt 2025</b></span><span role="cell" class="mono v2"><span>599 kWh</span><span>€ 80,69</span></span><span role="cell" class="mono v2"><span>45 kWh</span><span>€ 4,98</span></span><span role="cell" class="mono v1"><span>18 m³</span></span><span role="cell">De zon zakt weg, het verbruik stijgt.</span></div>
+    <div class="mrow" role="row"><span role="cell"><b>nov 2025</b></span><span role="cell" class="mono v2"><span>807 kWh</span><span>€ 116,10</span></span><span role="cell" class="mono v2"><span>0 kWh</span><span>€ 0,01</span></span><span role="cell" class="mono v1"><span>64 m³</span></span><span role="cell">21 november: de thuisbatterij komt.</span></div>
+    <div class="mrow" role="row"><span role="cell"><b>dec 2025</b></span><span role="cell" class="mono v2"><span>806 kWh</span><span>€ 95,23</span></span><span role="cell" class="mono v2"><span>2 kWh</span><span>€ 0,28</span></span><span role="cell" class="mono v1"><span>77 m³</span></span><span role="cell">Eerste volle maand met de batterij. Bijna geen zon, dus bijna niets terug.</span></div>
+    <div class="mrow" role="row"><span role="cell"><b>jan 2026</b></span><span role="cell" class="mono v2"><span>841 kWh</span><span>€ 114,97</span></span><span role="cell" class="mono v2"><span>4 kWh</span><span>€ 0,60</span></span><span role="cell" class="mono v1"><span>123 m³</span></span><span role="cell">Het meeste gas van het jaar: 123 m³ voor € 59,00. Dit is de lat voor de warmtepomp.</span></div>
+    <div class="mrow" role="row"><span role="cell"><b>feb 2026</b></span><span role="cell" class="mono v2"><span>614 kWh</span><span>€ 72,88</span></span><span role="cell" class="mono v2"><span>5 kWh</span><span>€ 1,00</span></span><span role="cell" class="mono v1"><span>90 m³</span></span><span role="cell">Nog volop winter in de meterkast.</span></div>
+    <div class="mrow" role="row"><span role="cell"><b>mrt 2026</b></span><span role="cell" class="mono v2"><span>523 kWh</span><span>€ 43,99</span></span><span role="cell" class="mono v2"><span>41 kWh</span><span>€ 5,03</span></span><span role="cell" class="mono v1"><span>39 m³</span></span><span role="cell">25 maart: Home Assistant gaat draaien.</span></div>
+    <div class="mrow" role="row"><span role="cell"><b>apr 2026</b></span><span role="cell" class="mono v2"><span>400 kWh</span><span>€ 13,28</span></span><span role="cell" class="mono v2"><span>113 kWh</span><span>€ 13,59</span></span><span role="cell" class="mono v1"><span>18 m³</span></span><span role="cell">Voor het eerst levert terugleveren meer op dan de afname kost.</span></div>
+    <div class="mrow" role="row"><span role="cell"><b>mei 2026</b></span><span role="cell" class="mono v2"><span>450 kWh</span><span>€ 33,65</span></span><span role="cell" class="mono v2"><span>224 kWh</span><span>€ 41,74</span></span><span role="cell" class="mono v1"><span>13 m³</span></span><span role="cell">Zon erbij, batterij handelt.</span></div>
+    <div class="mrow" role="row"><span role="cell"><b>jun 2026</b></span><span role="cell" class="mono v2"><span>585 kWh</span><span>€ 70,25</span></span><span role="cell" class="mono v2"><span>421 kWh</span><span>€ 112,77</span></span><span role="cell" class="mono v1"><span>11 m³</span></span><span role="cell">Beste maand: € 42,52 meer ontvangen dan betaald voor stroom.</span></div>
+    <div class="mrow" role="row"><span role="cell"><b>jul 2026</b></span><span role="cell" class="mono v2"><span>518 kWh</span><span>€ 49,70</span></span><span role="cell" class="mono v2"><span>377 kWh</span><span>€ 76,13</span></span><span role="cell" class="mono v1"><span>9 m³</span></span><span role="cell">Nog steeds ruim in de plus.</span></div>
+    <div class="mrow" role="row"><span role="cell"><b>aug 2026</b></span><span role="cell" class="mono v2"><span>491 kWh</span><span>€ 63,09</span></span><span role="cell" class="mono v2"><span>324 kWh</span><span>€ 74,58</span></span><span role="cell" class="mono v1"><span>9 m³</span></span><span role="cell">Teruglevering bracht meer op dan de afname kostte. Een jaar eerder, zonder batterij, leverde 355 kWh terug maar € 20,93 op.</span></div>
+    <div class="mrow" role="row"><span role="cell"><b>sep 2026</b></span><span role="cell" class="mono v2"><span>645 kWh</span><span>€ 95,94</span></span><span role="cell" class="mono v2"><span>294 kWh</span><span>€ 94,08</span></span><span role="cell" class="mono v1"><span>10 m³</span></span><span role="cell">Batterij handelt nog. Teruglevering bracht bijna evenveel op als de afname kostte.</span></div>
+    <div class="mrow pending" role="row"><span role="cell"><b>okt 2026</b></span><span role="cell" class="mono">volgt</span><span role="cell" class="mono">volgt</span><span role="cell" class="mono">volgt</span><span role="cell">13 okt: batterij op zelf gebruiken. 15 okt: warmtepomp aan, continu 21 graden.</span></div>
+  </div>
+  <p class="note">Augustus 2025 tot en met juli 2026 komt van mijn jaarafrekening, daarna van de maandfacturen. Bedragen zijn zonder energiebelasting en vaste kosten: die rekent Zonneplan elke maand apart, als vast bedrag. Op een maandfactuur staat bij gas soms 1 of 2 m³ minder dan op de jaarafrekening, door een correctiefactor.</p></div></section><section id="vorigjaar"><div class="sec-head rv"><div class="eyebrow">Zelfde maand, vorig jaar</div><h2>Wat is er veranderd?</h2></div><div class="yoy-wrap rv">
+  <p class="intro">Elke maand zet ik naast dezelfde maand een jaar eerder. Mijn cijfers beginnen in augustus 2025; van daarvoor heb ik geen facturen, want toen zat ik bij een andere leverancier. Elke nieuwe factuur komt hier als nieuwe vergelijking bij.</p>
+  <div class="yoy">
+    <article class="ycard"><div class="yhead"><h3>Augustus</h3><span class="mono">2025 → 2026</span></div>
+      <div class="yrow yh"><span></span><span>2025</span><span>2026</span><span>verschil</span></div>
+      <div class="yrow"><span>Afgenomen (kWh)</span><span class="mono">317</span><span class="mono">491</span><b class="mono up">+ 174</b></div>
+      <div class="yrow"><span>Teruggeleverd (kWh)</span><span class="mono">355</span><span class="mono">324</span><b class="mono down">− 31</b></div>
+      <div class="yrow"><span>Gas (m³)</span><span class="mono">10</span><span class="mono">9</span><b class="mono good">− 1</b></div>
+      <div class="yrow ytot"><span>Netto stroom</span><span class="mono">€ 22,12</span><span class="mono">− € 11,49</span><b class="mono good">− € 33,61</b></div>
+      <p>Een jaar eerder leverde 355 kWh terug € 20,93 op. Nu leverde 324 kWh € 74,58 op, omdat de batterij op dure uren terugleverde.</p></article>
+    <article class="ycard"><div class="yhead"><h3>September</h3><span class="mono">2025 → 2026</span></div>
+      <div class="yrow yh"><span></span><span>2025</span><span>2026</span><span>verschil</span></div>
+      <div class="yrow"><span>Afgenomen (kWh)</span><span class="mono">399</span><span class="mono">645</span><b class="mono up">+ 246</b></div>
+      <div class="yrow"><span>Teruggeleverd (kWh)</span><span class="mono">259</span><span class="mono">294</span><b class="mono good">+ 35</b></div>
+      <div class="yrow"><span>Gas (m³)</span><span class="mono">11</span><span class="mono">10</span><b class="mono good">− 1</b></div>
+      <div class="yrow ytot"><span>Netto stroom</span><span class="mono">€ 40,92</span><span class="mono">€ 1,86</span><b class="mono good">− € 39,06</b></div>
+      <p>Bijna 250 kWh meer afgenomen, en toch € 39 goedkoper uit. De batterij laadde goedkoop uit het net en leverde duur terug.</p></article>
+    <article class="ycard pending"><div class="yhead"><h3>Oktober</h3><span class="mono">2025 → 2026</span></div>
+      <p>Komt met de factuur van half december. Dan zie je de eerste maand met de warmtepomp naast oktober 2025: 599 kWh afgenomen en 18 m³ gas.</p></article>
+  </div>
+  <p class="note">Stroom netto is wat ik betaalde voor afname min wat ik kreeg voor teruglevering. Een min betekent dat ik geld overhield. Bedragen zonder energiebelasting en vaste kosten, want die rekent Zonneplan als vast maandbedrag. Let op: na 2027 betaal ik over elke afgenomen kWh weer volle energiebelasting, dus die extra afname gaat dan wel tellen.</p>
+</div></section><section id="thuis"><div class="sec-head rv"><div class="eyebrow">Gisteren bij mij thuis</div><h2>Vrijdag 16 oktober: dag twee met de warmtepomp</h2></div><div class="home-grid rv">
+  <div class="hcard c-sun"><span>Zon opgewekt</span><b class="mono">2,41<small> kWh</small></b></div>
+  <div class="hcard c-ink"><span>Verbruikt in huis</span><b class="mono">25,02<small> kWh</small></b></div>
+  <div class="hcard c-ink"><span>Ingekocht van het net</span><b class="mono">19,31<small> kWh</small></b></div>
+  <div class="hcard c-sun"><span>Teruggeleverd</span><b class="mono">0,14<small> kWh</small></b></div>
+  <div class="hcard c-bat"><span>Batterij geladen</span><b class="mono">12,36<small> kWh</small></b></div>
+  <div class="hcard c-bat"><span>Batterij ontladen</span><b class="mono">15,78<small> kWh</small></b></div>
+</div>
+<p class="note">Uit Home Assistant, gemeten door mijn Sigenergy-installatie. Bijna geen zon, iets meer verbruik dan donderdag, en de batterij leverde meer dan hij laadde. Op de echte site ververst dit blok elke dag.</p></section><section class="end rv"><a class="next" href="home-assistant.html"><div><div class="eyebrow">Volgende</div><h2>Home Assistant</h2></div><span class="arr" aria-hidden="true">→</span></a></section></main><footer class="foot">
+  <div><a class="logo" href="index.html"><i></i>Na de Saldering</a>
+    <p>Een logboek van Mark uit Heerhugowaard. Wat het einde van de saldering doet met een gewoon huis, met echte rekeningen en Home Assistant.</p></div>
+  <div><ul><li><a href="salderen.html">Salderen</a></li><li><a href="salderen.html#rekenhulp">Rekenhulp</a></li><li><a href="mijn-cijfers.html">Mijn cijfers</a></li></ul></div>
+  <div><ul><li><a href="home-assistant.html">Home Assistant</a></li><li><a href="logboek.html">Logboek</a></li><li><a href="over.html">Over mij</a></li><li><a href="samenwerken.html">Samenwerken</a></li></ul></div>
+  <div class="fine"><span>Geen installaties, geen verkooppraatje. Cookievrij.</span><span>nadesaldering.nl · ontwerp-preview</span></div>
+</footer></div><script src="app.js"></script></body></html>

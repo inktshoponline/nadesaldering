@@ -1,0 +1,55 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Deel 05: Noodstroom: wat als <em>het net uitvalt?</em> · Na de Saldering</title><meta name="description" content="Je hoort steeds vaker over problemen op het stroomnet. Mijn thuisbatterij heeft noodstroom en houdt daarvoor altijd 2,71 kWh achter. Wat betekent dat in de praktijk, en is het die ruimte waard?"><meta name="claude:viewport-fit-sides" content="cover"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"><link rel="stylesheet" href="style.css"><script>document.documentElement.classList.add("js")</script></head><body><div class="progress" aria-hidden="true"></div><a class="skip" href="#main">Naar de inhoud</a>
+<div class="bar"><div class="wrap">
+  <div class="ticker mono" aria-label="Prijzen bij mij thuis, momentopname">
+    <span><i class="dot"></i>Stroom nu <b>€ 0,31</b>/kWh</span>
+    <span>Gas vandaag <b>€ 1,85</b>/m³</span>
+    <span class="t-src">Zonneplan · 17 okt 06:06</span>
+  </div>
+  <header class="top">
+    <a class="logo" href="index.html"><i></i>Na de Saldering</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu"><span></span>Menu</button>
+    <nav class="top-nav" id="menu" aria-label="Hoofdmenu"><a href="salderen.html">Salderen</a><a href="mijn-cijfers.html">Mijn cijfers</a><a href="home-assistant.html">Home Assistant</a><a href="logboek.html" aria-current="page">Logboek</a><a href="over.html">Over mij</a><a href="samenwerken.html">Samenwerken</a></nav>
+  </header>
+</div></div><div class="wrap"><main id="main"><div class="crumbs"><a href="index.html">Home</a> / <a href="logboek.html">Logboek</a> / Deel 05</div><div class="phero" style="grid-template-columns:1fr"><div><div class="eyebrow">Deel 05</div><h1>Noodstroom: wat als <em>het net uitvalt?</em></h1><p class="lede">Je hoort steeds vaker over problemen op het stroomnet. Mijn thuisbatterij heeft noodstroom en houdt daarvoor altijd 2,71 kWh achter. Wat betekent dat in de praktijk, en is het die ruimte waard?</p><div class="meta-row"><span>Mark · Heerhugowaard</span><span>oktober 2026</span><span>bron: mijn eigen installatie</span></div></div></div><section style="padding-top:40px"><div class="art-layout"><nav class="toc" aria-label="In dit deel"><a href="#net">Wat er speelt</a><a href="#mijn">Mijn opstelling</a><a href="#lang">Hoe lang hou ik het vol?</a><a href="#aan">Wat blijft er aan?</a><a href="#prijs">Wat het kost</a><a href="#test">Getest</a></nav><article class="prose"><h2 id="net">Wat er speelt</h2>
+<p>Het woord dat je in het nieuws hoort, is <b>netcongestie</b>. Dat betekent: het stroomnet is op drukke momenten vol. Je merkt het vooral aan wachtlijsten voor nieuwe aansluitingen, en aan zonnepanelen die op zonnige middagen soms minder kwijt kunnen.</p>
+<p>Netcongestie is iets anders dan een stroomstoring. Dat de stroom bij je thuis uitvalt, gebeurt in Nederland zelden. Maar als het gebeurt, is het fijn als het huis gewoon doordraait. Daarvoor heb ik noodstroom.</p>
+<blockquote>Vergelijk het met het reservewiel in je auto. Je hoopt dat je het nooit nodig hebt, en het neemt ruimte in de kofferbak in. Maar als je met een lekke band langs de snelweg staat, ben je blij dat het er ligt.</blockquote>
+<h2 id="mijn">Mijn opstelling</h2>
+<table><tr><td>Thuisbatterij</td><td>Sigenergy SigenStor</td></tr><tr><td>Opslag</td><td>18,08 kWh</td></tr><tr><td>Altijd vrij voor noodstroom</td><td>2,71 kWh (15%)</td></tr><tr><td>Vermogen</td><td>15 kW, met noodstroom</td></tr><tr><td>Aansluiting</td><td>3 fasen × 25 A</td></tr><tr><td>Zonnepanelen</td><td>alle 12 via de batterij</td></tr></table>
+<p>Die 15% is de ondergrens. Daar gaat de batterij in normaal gebruik nooit onder. Valt het net uit, dan heb ik dus altijd minstens 2,71 kWh. Is de batterij op dat moment voller, dan heb ik meer.</p>
+<h2 id="lang">Hoe lang hou ik het vol?</h2>
+<p>Dat hangt af van wat er aan staat. Reken het zelf uit met je eigen verbruik:</p>
+<div class="calc rv" id="nood">
+  <div class="calc-in">
+    <div><div class="eyebrow">Hoeveel heb je achter de hand?</div>
+      <div class="seg-ctl" id="n-mode" style="margin-top:8px"><button type="button" data-kwh="2.71" aria-pressed="true">Alleen de reserve</button><button type="button" data-kwh="18.08" aria-pressed="false">Volle batterij</button></div></div>
+    <label for="n-kwh">Opslag voor noodstroom<small>Bij mij: 2,71 kWh die altijd vrij blijft, of 18,08 kWh als de batterij vol is.</small>
+      <span class="field"><input id="n-kwh" inputmode="decimal" value="2,71"><span>kWh</span></span></label>
+    <label for="n-w">Wat het huis dan gebruikt<small>Zie je in Home Assistant of op je P1-meter. Kijk 's nachts: dat is je sluipverbruik.</small>
+      <span class="field"><input id="n-w" inputmode="numeric" value="300"><span>watt</span></span></label>
+    <input type="range" id="n-slide" min="50" max="3000" step="50" value="300" aria-label="Verbruik in watt" class="slide">
+  </div>
+  <div class="calc-out" aria-live="polite">
+    <div class="eyebrow">Zo lang hou je het vol</div>
+    <div class="big" id="n-out">0 uur</div>
+    <p id="n-sub">zonder zon, bij een gelijk verbruik.</p>
+    <div class="gauge" aria-hidden="true"><i id="n-gauge"></i></div>
+    <p style="font-size:12px">Een rekensom: opslag gedeeld door verbruik. In het echt gaat er ook wat verloren bij het omzetten, en schijnt overdag misschien de zon. Het voorbeeld van 300 watt is geen meting, vul je eigen getal in.</p>
+  </div>
+</div>
+<h2 id="aan">Wat blijft er aan?</h2>
+<p>Bij mij alles. De noodstroom geldt voor het hele huis: elke groep in de meterkast hangt eraan, niet één aparte noodstroomgroep. Dat verschilt per installatie, bij veel batterijen blijft maar een paar groepen aan.</p>
+<p>Dat heeft een keerzijde. Alles wat aan staat, trekt uit dezelfde batterij. Ook de warmtepomp, de cv-ketel, de inductiekookplaat en Home Assistant zelf. Wie tijdens een storing kookt, ziet de batterij dus sneller zakken. Hoe meer er draait, hoe sneller de batterij leeg is. Daarom reken je hierboven met wat het hele huis gebruikt, niet alleen de koelkast.</p>
+<h2 id="prijs">Wat het kost</h2>
+<p>Noodstroom is niet gratis. Die 2,71 kWh staat elke dag stil. Die kan ik niet gebruiken om 's avonds dure stroom te vermijden. Dat is ongeveer een zevende van mijn batterij.</p>
+<div class="callout"><div class="eyebrow">Mijn afweging</div><p>Ik houd de reserve aan. Met zes mensen in huis wil ik dat alles blijft werken als het net eruit ligt. Wat die reserve me per jaar kost aan gemiste besparing, reken ik uit in deel 04.</p></div>
+<h2 id="test">Getest: de hoofdschakelaar eruit</h2>
+<p>Ik heb het al een paar keer gedaan: de hoofdschakelaar in de meterkast uit. Het resultaat was elke keer hetzelfde. Alles bleef draaien, in het hele huis.</p>
+<p>Wat ik nog niet heb gemeten, is hoe snel de batterij leegloopt als het net langer weg blijft. Dat ga ik bij de volgende test in Home Assistant bijhouden, met de grafiek erbij.</p>
+<p class="note">Laat werk in je meterkast over aan een installateur als je niet weet wat je doet. Ik verdien niets aan Sigenergy of aan andere merken die ik hier noem.</p></article></div></section><section class="end rv"><a class="next" href="logboek.html"><div><div class="eyebrow">Verder lezen</div><h2>Terug naar het logboek</h2></div><span class="arr" aria-hidden="true">→</span></a></section></main><footer class="foot">
+  <div><a class="logo" href="index.html"><i></i>Na de Saldering</a>
+    <p>Een logboek van Mark uit Heerhugowaard. Wat het einde van de saldering doet met een gewoon huis, met echte rekeningen en Home Assistant.</p></div>
+  <div><ul><li><a href="salderen.html">Salderen</a></li><li><a href="salderen.html#rekenhulp">Rekenhulp</a></li><li><a href="mijn-cijfers.html">Mijn cijfers</a></li></ul></div>
+  <div><ul><li><a href="home-assistant.html">Home Assistant</a></li><li><a href="logboek.html">Logboek</a></li><li><a href="over.html">Over mij</a></li><li><a href="samenwerken.html">Samenwerken</a></li></ul></div>
+  <div class="fine"><span>Geen installaties, geen verkooppraatje. Cookievrij.</span><span>nadesaldering.nl · ontwerp-preview</span></div>
+</footer></div><script src="app.js"></script></body></html>

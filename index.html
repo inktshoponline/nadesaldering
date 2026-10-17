@@ -1,0 +1,94 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Na de Saldering</title><meta name="description" content="Wat het einde van de saldering doet met een gewoon huis: echte rekeningen, een thuisbatterij, een warmtepomp en Home Assistant."><meta name="claude:viewport-fit-sides" content="cover"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"><link rel="stylesheet" href="style.css"><script>document.documentElement.classList.add("js")</script></head><body><a class="skip" href="#main">Naar de inhoud</a>
+<div class="bar"><div class="wrap">
+  <div class="ticker mono" aria-label="Prijzen bij mij thuis, momentopname">
+    <span><i class="dot"></i>Stroom nu <b>€ 0,31</b>/kWh</span>
+    <span>Gas vandaag <b>€ 1,85</b>/m³</span>
+    <span class="t-src">Zonneplan · 17 okt 06:06</span>
+  </div>
+  <header class="top">
+    <a class="logo" href="index.html"><i></i>Na de Saldering</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu"><span></span>Menu</button>
+    <nav class="top-nav" id="menu" aria-label="Hoofdmenu"><a href="salderen.html">Salderen</a><a href="mijn-cijfers.html">Mijn cijfers</a><a href="home-assistant.html">Home Assistant</a><a href="logboek.html">Logboek</a><a href="over.html">Over mij</a><a href="samenwerken.html">Samenwerken</a></nav>
+  </header>
+</div></div><div class="wrap"><main id="main"><div class="hero">
+  <div>
+    <div class="eyebrow">Een logboek uit Heerhugowaard</div>
+    <h1 style="margin-top:14px">Op 1 januari 2027 stopt de <em>saldering.</em></h1>
+    <p class="lede">Twaalf zonnepanelen, een thuisbatterij, sinds 15 oktober een warmtepomp en Home Assistant die het aanstuurt. En één vraag: levert het mij wat op? Hier zoek ik het uit, met mijn eigen jaarafrekening op tafel.</p>
+    <div class="meter" role="timer" aria-live="off" aria-label="Tijd tot het einde van de saldering">
+      <div class="cell"><b id="d">76</b><span>dagen</span></div><div class="cell"><b id="h">00</b><span>uur</span></div>
+      <div class="cell"><b id="m">00</b><span>min</span></div><div class="cell"><b id="s">00</b><span>sec</span></div></div>
+    <div class="meter-cap">tot de saldering stopt, op 1 januari 2027</div>
+  </div>
+  <figure class="chart" style="margin:0">
+  <div class="mode" role="tablist" aria-label="Kies prijs"><button role="tab" aria-selected="true" data-mode="power">Stroom per uur</button><button role="tab" aria-selected="false" data-mode="gas">Gas per dag</button></div>
+  <div class="chart-head"><strong data-for="power">Mijn uurprijs stroom</strong><strong data-for="gas" class="hide">Mijn gasprijs sinds april</strong>
+    <div class="days" role="tablist" aria-label="Kies dag" data-for="power"><button role="tab" aria-selected="true" data-day="0">Vr 16 okt</button><button role="tab" aria-selected="false" data-day="1">Za 17 okt</button></div></div>
+  <div class="readout"><span class="mono" id="clock">00:00</span><b class="mono" id="pnow">€ 0,00</b><span id="pgroup">per kWh</span></div>
+  <canvas id="day" width="640" height="400" aria-label="Prijsgrafiek. Stroom: uurprijzen van mijn Zonneplan-contract op 16 en 17 oktober 2026, duur in de ochtend en vroege avond, goedkoop midden op de dag en 's nachts. Gas: dagprijs van 5 april tot 16 oktober 2026, van € 1,28 per m³ op 19 april naar € 1,83 nu."></canvas>
+  <div class="legend" data-for="power"><span><i style="background:var(--ink)"></i>Uurprijs, alles inbegrepen</span><span><i style="background:var(--grid)"></i>Goedkope uren volgens Zonneplan</span><span><i style="background:var(--sun)"></i>Zon (schets)</span></div>
+  <div class="chips" aria-label="Apparaten die Home Assistant inplant" data-for="power"><span class="chip" data-on="low">thuisbatterij laden</span><span class="chip" data-on="low">boiler</span><span class="chip" data-on="low">warmtepomp extra</span><span class="chip" data-on="high">batterij levert aan huis</span></div>
+  <div class="gas-facts hide" data-for="gas"><div><b class="mono">€ 1,28</b><span>laagste dagprijs, 19 april</span></div><div><b class="mono">€ 1,83</b><span>nu, per m³</span></div><div><b class="mono">+ 43%</b><span>sinds het voorjaar</span></div></div>
+  <figcaption class="note" data-for="power">Echte uurprijzen van mijn Zonneplan-contract, uit Home Assistant, inclusief energiebelasting en btw. De apparaten laten het principe zien, niet mijn exacte planning.</figcaption>
+  <figcaption class="note hide" data-for="gas">Mijn gasprijs per dag bij Zonneplan, alles inbegrepen, gemiddeld per dag uit Home Assistant. Een gasdag loopt van 06:00 tot 06:00. Het gas werd duurder net nu mijn warmtepomp het meeste werk overneemt.</figcaption>
+</figure>
+</div>
+<section id="start"><div class="sec-head rv"><div class="eyebrow">Waar wil je beginnen?</div><h2>Drie deuren, één huis</h2></div>
+<div class="doors">
+  <a class="door d-sun rv" href="salderen.html"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="18" fill="currentColor"/><g stroke="currentColor" stroke-width="6" stroke-linecap="round"><path d="M50 8v12M50 80v12M8 50h12M80 50h12M20 20l9 9M71 71l9 9M80 20l-9 9M29 71l-9 9"/></g></svg><div class="eyebrow">Salderen</div><h3>Wat stopt er eigenlijk?</h3><p>Uitleg zonder vakjargon, plus een rekenhulp: wat kost het einde van de saldering jou?</p><span class="num mono">± € 205</span><p>per jaar, bij mij</p><span class="go">Naar salderen <i>→</i></span></a>
+  <a class="door d-bat rv" href="mijn-cijfers.html"><div class="eyebrow">Mijn cijfers</div><h3>Mijn rekening, open op tafel</h3><p>Jaarafrekening, maandfacturen en wat mijn batterij echt doet.</p><span class="num mono">84%</span><p>van mijn zonnestroom gebruik ik zelf</p><span class="go">Naar mijn cijfers <i>→</i></span></a>
+  <a class="door d-dark rv" href="home-assistant.html"><div class="eyebrow">Home Assistant</div><h3>Het brein van het huis</h3><p>Wat er allemaal in hangt, welke automatiseringen draaien en wat ze opleveren.</p><span class="num mono">30</span><p>automatiseringen</p><span class="go">Naar Home Assistant <i>→</i></span></a>
+</div></section>
+<section id="warmte"><div class="sec-head rv"><div class="eyebrow">Gas of warmtepomp</div><h2>Wat kost een kWh warmte?</h2></div><div class="heat rv" id="heat">
+  <div class="heat-top">
+    <div class="heat-side gas"><div class="eyebrow">Cv-ketel · Intergas 36/30</div><div class="heat-price mono"><span id="h-gas-k">€ 0,00</span><small>per kWh warmte</small></div>
+      <div class="heat-bar"><i id="h-gas-bar"></i></div><p class="mono">gas <b>€ 1,83</b>/m³ ÷ 8,8 kWh warmte per m³</p></div>
+    <div class="heat-vs mono" aria-hidden="true">vs</div>
+    <div class="heat-side wp"><div class="eyebrow">Warmtepomp · Quatt Duo</div><div class="heat-price mono"><span id="h-wp-k">€ 0,00</span><small>per kWh warmte</small></div>
+      <div class="heat-bar"><i id="h-wp-bar"></i></div><p class="mono">stroom <b id="h-el-p">€ 0,39</b>/kWh ÷ COP <b id="h-cop-t">4,0</b></p></div>
+  </div>
+  <div class="heat-verdict" aria-live="polite"><b id="h-verdict">0%</b><span id="h-verdict-t">goedkoper met de warmtepomp</span></div>
+  <div class="heat-ctl">
+    <div><div class="eyebrow">Stroomprijs</div><div class="seg-ctl three" id="h-el" style="margin-top:8px">
+      <button type="button" data-v="0.3301" aria-pressed="false">Goedkoopste uur</button><button type="button" data-v="0.3883" aria-pressed="true">Gemiddeld</button><button type="button" data-v="0.4529" aria-pressed="false">Duurste uur</button></div></div>
+    <label for="h-cop"><span class="eyebrow">Rendement warmtepomp (COP): <b class="mono" id="h-cop-v">4,0</b></span>
+      <input type="range" id="h-cop" class="slide" min="2" max="5.5" step="0.1" value="4"></label>
+  </div>
+  <div class="heat-jan"><div><div class="eyebrow">Januari 2026, opnieuw gerekend</div><p>Toen stookte ik 123 m³ gas. Dezelfde warmte met de prijzen van vandaag:</p></div>
+    <div class="jan-nums mono"><div><span>Intergas</span><b id="h-jan-gas">€ 0</b></div><div><span>Warmtepomp</span><b id="h-jan-wp">€ 0</b></div></div></div>
+  <p class="note">Prijzen van 16 oktober 2026 bij Zonneplan, inclusief belasting, zonder vaste kosten. Hoeveel warmte een m³ gas in de ketel geeft (8,8 kWh) en de COP zijn vuistregels, geen metingen. Hoe goed mijn warmtepomp het echt doet, meet ik deze winter in Home Assistant. Omslagpunt: bij een COP onder <b id="h-break">1,9</b> is gas goedkoper.</p>
+</div></section>
+<section id="thuis"><div class="sec-head rv"><div class="eyebrow">Gisteren bij mij thuis</div><h2>Vrijdag 16 oktober: dag twee met de warmtepomp</h2></div><div class="home-grid rv">
+  <div class="hcard c-sun"><span>Zon opgewekt</span><b class="mono">2,41<small> kWh</small></b></div>
+  <div class="hcard c-ink"><span>Verbruikt in huis</span><b class="mono">25,02<small> kWh</small></b></div>
+  <div class="hcard c-ink"><span>Ingekocht van het net</span><b class="mono">19,31<small> kWh</small></b></div>
+  <div class="hcard c-sun"><span>Teruggeleverd</span><b class="mono">0,14<small> kWh</small></b></div>
+  <div class="hcard c-bat"><span>Batterij geladen</span><b class="mono">12,36<small> kWh</small></b></div>
+  <div class="hcard c-bat"><span>Batterij ontladen</span><b class="mono">15,78<small> kWh</small></b></div>
+</div>
+<p class="note">Uit Home Assistant, gemeten door mijn Sigenergy-installatie. Bijna geen zon, iets meer verbruik dan donderdag, en de batterij leverde meer dan hij laadde. Op de echte site ververst dit blok elke dag.</p></section>
+<section id="verandert"><div class="sec-head rv"><div class="eyebrow">Wat verandert er</div><h2>Van wegstrepen naar zelf gebruiken</h2></div><div class="compare rv">
+  <div><div class="eyebrow">Tot en met 2026</div><h3>Met saldering</h3><ul>
+    <li>Wat je teruglevert, wordt over het hele jaar weggestreept tegen wat je afneemt.</li>
+    <li>Je betaalt energiebelasting alleen over het verschil.</li>
+    <li>Het net werkt een beetje als een gratis accu.</li></ul></div>
+  <div><div class="eyebrow">Vanaf 1 januari 2027</div><h3>Zonder saldering</h3><ul>
+    <li>Over elke kWh die je afneemt, betaal je weer volle energiebelasting.</li>
+    <li>Je eigen zonnestroom zelf gebruiken wordt het belangrijkste.</li>
+    <li>Het moment waarop je laadt, stookt of verwarmt gaat tellen.</li></ul></div>
+</div><p class="rv" style="margin-top:20px"><a class="mono" href="salderen.html#rekenhulp">Reken uit wat het jou kost →</a></p></section>
+<section id="logboek"><div class="sec-head rv"><div class="eyebrow">Logboek</div><h2>Wat ik uitzoek</h2></div><div class="log"><a class="entry rv" href="deel-01.html"><div class="no">Deel 01</div><div><h3>Wat het einde van de saldering mij kost: ongeveer € 205 per jaar</h3><p>Mijn jaarafrekening regel voor regel. Waarom het bij een dynamisch contract minder is dan je zou denken, en welke vraag nog open staat.</p><span class="go">Lees verder →</span></div><span class="stamp live">Te lezen</span></a><a class="entry rv" href="deel-02.html"><div class="no">Deel 02</div><div><h3>Van 482 m³ gas naar een warmtepomp op 21 graden</h3><p>Met zes mensen in huis stookte ik zuinig. Nu staat de Quatt Duo continu op 21 graden. Kost dat comfort meer of minder dan mijn zuinige gasjaren? Ik houd het maand voor maand bij.</p><span class="go">Lees verder →</span></div><span class="stamp live">Loopt</span></a><article class="entry rv"><div class="no">Deel 03</div><div><h3>Boiler, thuisbatterij en warmtepomp in Home Assistant</h3><p>Waarom ik Home Assistant gebruik: inzicht in wat er gebeurt, en de apparaten laten draaien op het goede moment. Met schermafbeeldingen van mijn dashboard.</p></div><span class="stamp ">In de maak</span></article></div><p class="rv" style="margin-top:20px"><a class="mono" href="logboek.html">Alle delen →</a></p></section>
+<section id="wie"><div class="sec-head rv"><div class="eyebrow">Wie schrijft dit</div><h2>Mark, huiseigenaar met een hobby</h2></div><div class="who rv" style="max-width:760px"><img src="mark.jpg" alt="Mark" width="534" height="640" loading="lazy"><div>
+<p>Overdag ben ik rijinstructeur in Heerhugowaard. Thuis ben ik bezig met domotica: alles wat slimmer kan, probeer ik slimmer te maken. We wonen hier met z'n zessen.</p>
+<p>Toen duidelijk werd dat de saldering stopt, wilde ik eerst weten: levert het mij wat op? Dat zoekwerk deel ik hier.</p>
+<p><a class="mono" href="over.html">Meer over mij en mijn installatie →</a></p></div></div></section>
+<section id="leveranciers"><div class="sec-head rv"><div class="eyebrow">Voor leveranciers</div><h2>Laat je product testen in een echt huis</h2></div><div class="supplier rv"><div class="sup-text"><p>Verkoop je een thuisbatterij, warmtepomp, slimme meter, sensor of energiecontract? Laat het meedraaien in een huis met zes mensen, gemeten in Home Assistant. Je krijgt een eerlijk artikel met echte data, en bij alles staat wat ik ervoor kreeg.</p>
+<a class="sup-btn" href="samenwerken.html">Bekijk hoe het werkt <i>→</i></a></div>
+<ul class="sup-list mono"><li><span>01</span>Echt huis, 6 personen</li><li><span>02</span>Gemeten voor en na</li><li><span>03</span>Eerlijk, ook minpunten</li><li><span>04</span>Samenwerking altijd vermeld</li></ul></div></section>
+<section class="end rv"><a class="next" href="salderen.html"><div><div class="eyebrow">Begin bij het begin</div><h2>Wat is salderen?</h2></div><span class="arr" aria-hidden="true">→</span></a></section></main><footer class="foot">
+  <div><a class="logo" href="index.html"><i></i>Na de Saldering</a>
+    <p>Een logboek van Mark uit Heerhugowaard. Wat het einde van de saldering doet met een gewoon huis, met echte rekeningen en Home Assistant.</p></div>
+  <div><ul><li><a href="salderen.html">Salderen</a></li><li><a href="salderen.html#rekenhulp">Rekenhulp</a></li><li><a href="mijn-cijfers.html">Mijn cijfers</a></li></ul></div>
+  <div><ul><li><a href="home-assistant.html">Home Assistant</a></li><li><a href="logboek.html">Logboek</a></li><li><a href="over.html">Over mij</a></li><li><a href="samenwerken.html">Samenwerken</a></li></ul></div>
+  <div class="fine"><span>Geen installaties, geen verkooppraatje. Cookievrij.</span><span>nadesaldering.nl · ontwerp-preview</span></div>
+</footer></div><script src="app.js"></script></body></html>
