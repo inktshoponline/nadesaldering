@@ -1,9 +1,9 @@
 <!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Home Assistant · Na de Saldering</title><meta name="description" content="Hoe ik Home Assistant gebruik voor energie: thuisbatterij, warmtepomp, dynamische prijzen en automatiseringen."><meta name="claude:viewport-fit-sides" content="cover"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"><link rel="stylesheet" href="style.css"><script>document.documentElement.classList.add("js")</script></head><body><a class="skip" href="#main">Naar de inhoud</a>
 <div class="bar"><div class="wrap">
   <div class="ticker mono" aria-label="Prijzen bij mij thuis, momentopname">
-    <span><i class="dot"></i>Stroom nu <b>€ 0,31</b>/kWh</span>
+    <span><i class="dot"></i>Stroom nu <b>€ 0,30</b>/kWh</span>
     <span>Gas vandaag <b>€ 1,85</b>/m³</span>
-    <span class="t-src">Zonneplan · 17 okt 06:06</span>
+    <span class="t-src">Zonneplan · 18 okt 06:56</span>
   </div>
   <header class="top">
     <a class="logo" href="index.html"><i></i>Na de Saldering</a>
@@ -22,7 +22,7 @@
   <article class="auto rv"><div class="when"><span class="eyebrow">Als</span>de P1-meter een stapje verder telt</div><div class="arrow" aria-hidden="true">→</div><div class="then"><span class="eyebrow">Dan</span>vermenigvuldig ik die kWh met de kwartierprijs van Zonneplan en tel ik het op. Zo zie ik elke dag wat stroom me echt kost, en wat terugleveren opbrengt.</div></article>
   <article class="auto rv"><div class="when"><span class="eyebrow">Als</span>het 08:00 uur is</div><div class="arrow" aria-hidden="true">→</div><div class="then"><span class="eyebrow">Dan</span>krijgt mijn vrouw een melding op haar telefoon: de prijs nu, het goedkoopste en duurste kwartier van vandaag, en het goedkoopste blok om de was te draaien.</div></article>
   <article class="auto rv"><div class="when"><span class="eyebrow">Als</span>de vaatwasser start en stopt</div><div class="arrow" aria-hidden="true">→</div><div class="then"><span class="eyebrow">Dan</span>houdt Home Assistant de duur, het verbruik en de kosten bij.<div class="receipt mono"><span>Laatste beurt · 15 okt, 19:01</span><span>140 min · 0,97 kWh · <b>€ 0,39</b></span></div></div></article>
-  <article class="auto todo rv"><div class="when"><span class="eyebrow">Als</span>het 07:00 uur is, en om 21:00 weer uit</div><div class="arrow" aria-hidden="true">→</div><div class="then"><span class="eyebrow">Dan</span>gaat de boiler aan. Eerlijk is eerlijk: dat zijn nog vaste tijden. <b>Volgende stap:</b> de boiler laten verwarmen op de goedkoopste uren.</div></article>
+  <article class="auto rv"><div class="when"><span class="eyebrow">Als</span>het tussen 07:00 en 21:00 is, of 's nachts de stroom goedkoop is of de batterij boven 90% zit</div><div class="arrow" aria-hidden="true">→</div><div class="then"><span class="eyebrow">Dan</span>staat de boiler aan. Anders blijft hij 's nachts uit. Home Assistant kijkt elk kwartier opnieuw.</div></article>
 </div></section><section id="tijdlijn"><div class="sec-head rv"><div class="eyebrow">Tijdlijn</div><h2>Logboek van mijn installatie</h2></div><ol class="timeline rv">
   <li><time>21 nov 2025</time><span>Sigenergy-batterij geplaatst, alle panelen erop aangesloten</span></li>
   <li><time>25 mrt 2026</time><span>Home Assistant geïnstalleerd, met de HomeWizard watermeter als eerste</span></li>
@@ -33,7 +33,8 @@
   <li><time>aug 2026</time><span>Eigen sensoren voor kosten, batterijcycli en besparing, plus een tablet aan de muur</span></li>
   <li><time>okt 2026</time><span>Vaatwasser bijhouden, stroomkosten per kwartier, prijsmelding om 08:00</span></li>
   <li><time>13 okt 2026</time><span>Batterij van handelen naar eerst zelf gebruiken</span></li>
-  <li class="now"><time>15 okt 2026</time><span>Quatt Duo warmtepomp geplaatst en gekoppeld, thermostaat continu op 21 graden</span></li>
+  <li><time>15 okt 2026</time><span>Quatt Duo warmtepomp geplaatst en gekoppeld, thermostaat continu op 21 graden</span></li>
+  <li class="now"><time>17 okt 2026</time><span>Boiler slim: 's nachts alleen aan bij goedkope stroom of een volle batterij</span></li>
 </ol>
 <p class="note">Datums komen uit Home Assistant: het moment waarop ik een koppeling toevoegde. Slot, camera en locatie-tracking laat ik hier bewust weg.</p></section><section class="end rv"><a class="next" href="logboek.html"><div><div class="eyebrow">Volgende</div><h2>Het logboek</h2></div><span class="arr" aria-hidden="true">→</span></a></section></main><footer class="foot">
   <div><a class="logo" href="index.html"><i></i>Na de Saldering</a>
