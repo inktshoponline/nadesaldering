@@ -23,12 +23,12 @@
   <figure class="chart" style="margin:0">
   <div class="mode" role="tablist" aria-label="Kies prijs"><button role="tab" aria-selected="true" data-mode="power">Stroom per uur</button><button role="tab" aria-selected="false" data-mode="gas">Gas per dag</button></div>
   <div class="chart-head"><strong data-for="power">Mijn uurprijs stroom</strong><strong data-for="gas" class="hide">Mijn gasprijs sinds april</strong>
-    <div class="days" role="tablist" aria-label="Kies dag" data-for="power"><button role="tab" aria-selected="true" data-day="0">Vr 16 okt</button><button role="tab" aria-selected="false" data-day="1">Za 17 okt</button></div></div>
+    <div class="days" role="tablist" aria-label="Kies dag" data-for="power"><button role="tab" aria-selected="false" data-day="0">Za 17 okt</button><button role="tab" aria-selected="true" data-day="1">Zo 18 okt</button></div></div>
   <div class="readout"><span class="mono" id="clock">00:00</span><b class="mono" id="pnow">€ 0,00</b><span id="pgroup">per kWh</span></div>
-  <canvas id="day" width="640" height="400" aria-label="Prijsgrafiek. Stroom: uurprijzen van mijn Zonneplan-contract op 16 en 17 oktober 2026, duur in de ochtend en vroege avond, goedkoop midden op de dag en 's nachts. Gas: dagprijs van 5 april tot 16 oktober 2026, van € 1,28 per m³ op 19 april naar € 1,83 nu."></canvas>
+  <canvas id="day" width="640" height="400" aria-label="Prijsgrafiek. Stroom: uurprijzen van mijn Zonneplan-contract op 17 en 18 oktober 2026, duur in de ochtend en vroege avond, goedkoop midden op de dag en 's nachts. Gas: dagprijs van 5 april tot 18 oktober 2026, van € 1,28 per m³ op 19 april naar € 1,85 nu."></canvas>
   <div class="legend" data-for="power"><span><i style="background:var(--ink)"></i>Uurprijs, alles inbegrepen</span><span><i style="background:var(--grid)"></i>Goedkope uren volgens Zonneplan</span><span><i style="background:var(--sun)"></i>Zon (schets)</span></div>
   <div class="chips" aria-label="Apparaten die Home Assistant inplant" data-for="power"><span class="chip" data-on="low">thuisbatterij laden</span><span class="chip" data-on="low">boiler</span><span class="chip" data-on="low">warmtepomp extra</span><span class="chip" data-on="high">batterij levert aan huis</span></div>
-  <div class="gas-facts hide" data-for="gas"><div><b class="mono">€ 1,28</b><span>laagste dagprijs, 19 april</span></div><div><b class="mono">€ 1,83</b><span>nu, per m³</span></div><div><b class="mono">+ 43%</b><span>sinds het voorjaar</span></div></div>
+  <div class="gas-facts hide" data-for="gas"><div><b class="mono">€ 1,28</b><span>laagste dagprijs, 19 april</span></div><div><b class="mono">€ 1,85</b><span>nu, per m³</span></div><div><b class="mono">+ 44%</b><span>sinds het voorjaar</span></div></div>
   <figcaption class="note" data-for="power">Echte uurprijzen van mijn Zonneplan-contract, uit Home Assistant, inclusief energiebelasting en btw. De apparaten laten het principe zien, niet mijn exacte planning.</figcaption>
   <figcaption class="note hide" data-for="gas">Mijn gasprijs per dag bij Zonneplan, alles inbegrepen, gemiddeld per dag uit Home Assistant. Een gasdag loopt van 06:00 tot 06:00. Het gas werd duurder net nu mijn warmtepomp het meeste werk overneemt.</figcaption>
 </figure>
@@ -37,26 +37,26 @@
 <div class="doors">
   <a class="door d-sun rv" href="salderen.html"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="18" fill="currentColor"/><g stroke="currentColor" stroke-width="6" stroke-linecap="round"><path d="M50 8v12M50 80v12M8 50h12M80 50h12M20 20l9 9M71 71l9 9M80 20l-9 9M29 71l-9 9"/></g></svg><div class="eyebrow">Salderen</div><h3>Wat stopt er eigenlijk?</h3><p>Uitleg zonder vakjargon, plus een rekenhulp: wat kost het einde van de saldering jou?</p><span class="num mono">± € 205</span><p>per jaar, bij mij</p><span class="go">Naar salderen <i>→</i></span></a>
   <a class="door d-bat rv" href="mijn-cijfers.html"><div class="eyebrow">Mijn cijfers</div><h3>Mijn rekening, open op tafel</h3><p>Jaarafrekening, maandfacturen en wat mijn batterij echt doet.</p><span class="num mono">84%</span><p>van mijn zonnestroom gebruik ik zelf</p><span class="go">Naar mijn cijfers <i>→</i></span></a>
-  <a class="door d-dark rv" href="home-assistant.html"><div class="eyebrow">Home Assistant</div><h3>Het brein van het huis</h3><p>Wat er allemaal in hangt, welke automatiseringen draaien en wat ze opleveren.</p><span class="num mono">30</span><p>automatiseringen</p><span class="go">Naar Home Assistant <i>→</i></span></a>
+  <a class="door d-dark rv" href="home-assistant.html"><div class="eyebrow">Home Assistant</div><h3>Het brein van het huis</h3><p>Wat er allemaal in hangt, welke automatiseringen draaien en wat ze opleveren.</p><span class="num mono">31</span><p>automatiseringen</p><span class="go">Naar Home Assistant <i>→</i></span></a>
 </div></section>
 <section id="warmte"><div class="sec-head rv"><div class="eyebrow">Gas of warmtepomp</div><h2>Wat kost een kWh warmte?</h2></div><div class="heat rv" id="heat">
   <div class="heat-top">
     <div class="heat-side gas"><div class="eyebrow">Cv-ketel · Intergas 36/30</div><div class="heat-price mono"><span id="h-gas-k">€ 0,00</span><small>per kWh warmte</small></div>
-      <div class="heat-bar"><i id="h-gas-bar"></i></div><p class="mono">gas <b>€ 1,83</b>/m³ ÷ 8,8 kWh warmte per m³</p></div>
+      <div class="heat-bar"><i id="h-gas-bar"></i></div><p class="mono">gas <b>€ 1,85</b>/m³ ÷ 8,8 kWh warmte per m³</p></div>
     <div class="heat-vs mono" aria-hidden="true">vs</div>
     <div class="heat-side wp"><div class="eyebrow">Warmtepomp · Quatt Duo</div><div class="heat-price mono"><span id="h-wp-k">€ 0,00</span><small>per kWh warmte</small></div>
-      <div class="heat-bar"><i id="h-wp-bar"></i></div><p class="mono">stroom <b id="h-el-p">€ 0,39</b>/kWh ÷ COP <b id="h-cop-t">4,0</b></p></div>
+      <div class="heat-bar"><i id="h-wp-bar"></i></div><p class="mono">stroom <b id="h-el-p">€ 0,37</b>/kWh ÷ COP <b id="h-cop-t">4,0</b></p></div>
   </div>
   <div class="heat-verdict" aria-live="polite"><b id="h-verdict">0%</b><span id="h-verdict-t">goedkoper met de warmtepomp</span></div>
   <div class="heat-ctl">
     <div><div class="eyebrow">Stroomprijs</div><div class="seg-ctl three" id="h-el" style="margin-top:8px">
-      <button type="button" data-v="0.3301" aria-pressed="false">Goedkoopste uur</button><button type="button" data-v="0.3883" aria-pressed="true">Gemiddeld</button><button type="button" data-v="0.4529" aria-pressed="false">Duurste uur</button></div></div>
+      <button type="button" data-v="0.2862" aria-pressed="false">Goedkoopste uur</button><button type="button" data-v="0.3664" aria-pressed="true">Gemiddeld</button><button type="button" data-v="0.4636" aria-pressed="false">Duurste uur</button></div></div>
     <label for="h-cop"><span class="eyebrow">Rendement warmtepomp (COP): <b class="mono" id="h-cop-v">4,0</b></span>
       <input type="range" id="h-cop" class="slide" min="2" max="5.5" step="0.1" value="4"></label>
   </div>
   <div class="heat-jan"><div><div class="eyebrow">Januari 2026, opnieuw gerekend</div><p>Toen stookte ik 123 m³ gas. Dezelfde warmte met de prijzen van vandaag:</p></div>
     <div class="jan-nums mono"><div><span>Intergas</span><b id="h-jan-gas">€ 0</b></div><div><span>Warmtepomp</span><b id="h-jan-wp">€ 0</b></div></div></div>
-  <p class="note">Prijzen van 16 oktober 2026 bij Zonneplan, inclusief belasting, zonder vaste kosten. Hoeveel warmte een m³ gas in de ketel geeft (8,8 kWh) en de COP zijn vuistregels, geen metingen. Hoe goed mijn warmtepomp het echt doet, meet ik deze winter in Home Assistant. Omslagpunt: bij een COP onder <b id="h-break">1,9</b> is gas goedkoper.</p>
+  <p class="note">Prijzen van 18 oktober 2026 bij Zonneplan, inclusief belasting, zonder vaste kosten. Hoeveel warmte een m³ gas in de ketel geeft (8,8 kWh) en de COP zijn vuistregels, geen metingen. Hoe goed mijn warmtepomp het echt doet, meet ik deze winter in Home Assistant. Omslagpunt: bij een COP onder <b id="h-break">1,9</b> is gas goedkoper.</p>
 </div></section>
 <section id="thuis"><div class="sec-head rv"><div class="eyebrow">Gisteren bij mij thuis</div><h2>Zaterdag 17 oktober: ruim vier keer zoveel zon</h2></div><div class="eflow rv" aria-label="Energiestromen gisteren">
   <div class="enode n-sun"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="9"/><path d="M24 5v6M24 37v6M5 24h6M37 24h6M10.6 10.6l4.2 4.2M33.2 33.2l4.2 4.2M10.6 37.4l4.2-4.2M33.2 14.8l4.2-4.2"/></svg><span>Zon</span><b class="mono" data-k="zon">10,56<small> kWh</small></b></div>
@@ -94,7 +94,7 @@
     <div class="qrow"><div class="qst"><span>Warmte</span><b class="mono c-sun" data-k="wp-warmte">0,0 kWh</b></div><div class="qst"><span>Stroom</span><b class="mono" data-k="wp-stroom">0,29 kWh</b></div><div class="qst"><span>COP</span><b class="mono c-grid" data-k="wp-cop">–</b></div></div>
   </div>
 </div>
-<p class="note">Uit Home Assistant: Sigenergy voor zon, batterij en net, Quatt voor de warmtepomp. Warmte, stroom en COP gaan over de hele dag; het display en de laadstand zijn een momentopname. Ruim vier keer zoveel zon als vrijdag, en de batterij laadde meer dan hij leverde. De warmtepomp stond weer de hele dag stand-by, bij gemiddeld <span data-k="buiten">11,1</span> graden buiten. Op de echte site ververst dit blok elke dag.</p></section>
+<p class="note">Uit Home Assistant: Sigenergy voor zon, batterij en net, Quatt voor de warmtepomp. Warmte, stroom en COP gaan over de hele dag; het display en de laadstand zijn een momentopname. Ruim vier keer zoveel zon als vrijdag, en de batterij laadde meer dan hij leverde. De warmtepomp stond weer de hele dag stand-by, bij gemiddeld <span data-k="buiten">11,1</span> graden buiten. Op de echte site ververst dit blok elke dag.</p><p class="rv" style="margin-top:20px"><a class="mono" href="dagen.html">Alle dagen terugkijken →</a></p></section>
 <section id="verandert"><div class="sec-head rv"><div class="eyebrow">Wat verandert er</div><h2>Van wegstrepen naar zelf gebruiken</h2></div><div class="compare rv">
   <div><div class="eyebrow">Tot en met 2026</div><h3>Met saldering</h3><ul>
     <li>Wat je teruglevert, wordt over het hele jaar weggestreept tegen wat je afneemt.</li>
