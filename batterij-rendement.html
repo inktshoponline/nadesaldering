@@ -1,0 +1,40 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Blog: Hoeveel stroom verliest <em>mijn thuisbatterij?</em> · Na de Saldering</title><meta name="description" content="Een batterij is geen gratis opslag. Wat erin gaat, komt er niet helemaal uit. Ik wilde weten hoeveel ik kwijtraak, dus heb ik de tellers van mijn Sigenergy erbij gepakt."><meta name="claude:viewport-fit-sides" content="cover"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"><link rel="stylesheet" href="style.css"><script>document.documentElement.classList.add("js")</script></head><body><div class="progress" aria-hidden="true"></div><a class="skip" href="#main">Naar de inhoud</a>
+<div class="bar"><div class="wrap">
+  <div class="ticker mono" aria-label="Prijzen bij mij thuis, momentopname">
+    <span><i class="dot"></i>Stroom nu <b>€ 0,66</b>/kWh</span>
+    <span>Gas vandaag <b>€ 1,80</b>/m³</span>
+    <span class="t-src">Zonneplan · 10 nov 07:01</span>
+  </div>
+  <header class="top">
+    <a class="logo" href="index.html"><i></i>Na de Saldering</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu"><span></span>Menu</button>
+    <nav class="top-nav" id="menu" aria-label="Hoofdmenu"><a href="salderen.html">Salderen</a><a href="mijn-cijfers.html">Mijn cijfers</a><a href="home-assistant.html">Home Assistant</a><a href="logboek.html" aria-current="page">Logboek</a><a href="over.html">Over mij</a><a href="samenwerken.html">Samenwerken</a></nav>
+  </header>
+</div></div><div class="wrap"><main id="main"><div class="crumbs"><a href="index.html">Home</a> / <a href="logboek.html">Logboek</a> / Blog</div><div class="phero" style="grid-template-columns:1fr"><div><div class="eyebrow">Blog</div><h1>Hoeveel stroom verliest <em>mijn thuisbatterij?</em></h1><p class="lede">Een batterij is geen gratis opslag. Wat erin gaat, komt er niet helemaal uit. Ik wilde weten hoeveel ik kwijtraak, dus heb ik de tellers van mijn Sigenergy erbij gepakt.</p><div class="meta-row"><span>Mark · Heerhugowaard</span><span>9 november 2026</span><span>bron: Home Assistant</span></div></div></div><section style="padding-top:40px"><div class="art-layout"><nav class="toc" aria-label="In dit deel"><a href="#totaal">Sinds de eerste dag</a><a href="#klopt">Klopt dat wel?</a><a href="#maand">Per maand</a><a href="#kost">Wat kost dat?</a><a href="#anders">Andere metingen</a><a href="#les">Wat ik eruit haal</a></nav><article class="prose"><h2 id="totaal">Sinds de eerste dag</h2>
+<p>Mijn batterij hangt er sinds 21 november 2025. De tellers lopen sindsdien mee.</p>
+<table><tr><td>Totaal geladen</td><td>4.739 kWh</td></tr><tr><td>Totaal geleverd</td><td>4.563 kWh</td></tr><tr><td>Kwijt</td><td>176 kWh</td></tr><tr><td>Wat eruit kwam</td><td>96,3% van wat erin ging</td></tr></table>
+<p>Deel je 4.739 kWh door 18,08 kWh, dan is dat ongeveer 262 keer helemaal vol en leeg. In het echt laadt hij vaak maar half, maar zo zie je hoe hard hij werkt. De batterij geeft zelf een gezondheid van 100% aan.</p>
+<h2 id="klopt">Klopt dat wel?</h2>
+<p>Ik heb het nagerekend met de andere tellers in Home Assistant: wat er binnenkwam, min wat eruit ging.</p>
+<table><tr><td>Binnen: zon + net</td><td>3.825 + 7.089 = 10.915 kWh</td></tr><tr><td>Eruit: huis + teruglevering</td><td>8.782 + 1.956 = 10.738 kWh</td></tr><tr><td>Verschil</td><td>176 kWh</td></tr></table>
+<p>Dat is precies het verlies van de batterij. Er verdwijnt dus nergens anders stroom. Wat ik niet weet: of de omvormer zijn eigen verlies al in die tellers verrekent. Dat staat nergens op mijn scherm, dus dat claim ik niet.</p>
+<h2 id="maand">Per maand</h2>
+<p>Home Assistant draait sinds eind maart, dus per maand heb ik april tot en met oktober.</p>
+<table><tr><td><b>Maand 2026</b></td><td><b>Geladen · geleverd · eruit</b></td></tr><tr><td>April</td><td>387 · 375 kWh · 96,9%</td></tr><tr><td>Mei</td><td>478 · 454 kWh · 94,9%</td></tr><tr><td>Juni</td><td>522 · 513 kWh · 98,2%</td></tr><tr><td>Juli</td><td>537 · 518 kWh · 96,5%</td></tr><tr><td>Augustus</td><td>511 · 484 kWh · 94,8%</td></tr><tr><td>September</td><td>528 · 517 kWh · 97,9%</td></tr><tr><td>Oktober</td><td>498 · 480 kWh · 96,3%</td></tr><tr><td><b>Samen</b></td><td><b>3.461 · 3.340 kWh · 96,5%</b></td></tr></table>
+<p>Per maand schommelt het, omdat de batterij aan het eind van de ene maand voller kan zijn dan aan het eind van de andere. Over zeven maanden middelt dat uit. Het getal dat ik vertrouw is dus 96 à 97%, niet de losse maanden.</p>
+<h2 id="kost">Wat kost dat?</h2>
+<p>176 kWh in bijna een jaar. Wat dat in euro's is, hangt af van wanneer de batterij laadde.</p>
+<div class="callout"><div class="eyebrow">Rekenvoorbeeld, geen meting</div><p>Tegen € 0,30 per kWh is 176 kWh ongeveer € 53. Tegen € 0,55 ongeveer € 97.</p></div>
+<p>Na 2027 telt dit zwaarder. Stroom die ik uit het net laad, betaal ik dan met volle energiebelasting, ook het deel dat in de batterij verloren gaat. Daarom zet ik de batterij per 1 januari 2027 op eerst zelf gebruiken, zonder terugleveren. Tot die tijd mag hij handelen. Dat werk ik uit in deel 04.</p>
+<h2 id="anders">Andere metingen</h2>
+<p>Vergelijken is lastig, want iedereen meet anders. <a href="https://iotdomotica.nl/" rel="noopener">IOTDomotica.nl</a> meet stekkerbatterijen van stopcontact tot stopcontact bij 800 watt, en komt uit op 85 tot 88%. Mijn getal komt uit de tellers van de batterij zelf, over bijna een jaar, bij alle vermogens door elkaar. Die twee kun je niet een-op-een naast elkaar leggen.</p>
+<h2 id="les">Wat ik eruit haal</h2>
+<p>Ik verlies ongeveer 4 kWh op elke 100 kWh die door de batterij gaat. Dat valt mee. Het betekent wel dat schuiven met stroom pas loont als het verschil tussen goedkoop en duur groot genoeg is.</p>
+<blockquote>Vergelijk het met tanken over de grens. Rijd je 20 kilometer om voor een paar cent per liter, dan kost de rit meer dan je bespaart. Puur op dit verlies: is het dure uur minder dan ongeveer 4% duurder dan het goedkope uur, dan levert laden en ontladen niets op. Slijtage van de batterij komt daar nog bij, dus in het echt moet het verschil groter zijn.</blockquote>
+<p class="note">Cijfers uit Home Assistant, tellers van Sigenergy: totaal geladen en geleverd, zon, net en huis, opgehaald op 9 november 2026. Geen samenwerkingen of doorverwijslinks in dit stuk. Ik verdien niets aan Sigenergy.</p></article></div></section><section class="end rv"><a class="next" href="logboek.html"><div><div class="eyebrow">Verder lezen</div><h2>Terug naar het logboek</h2></div><span class="arr" aria-hidden="true">→</span></a></section></main><footer class="foot">
+  <div><a class="logo" href="index.html"><i></i>Na de Saldering</a>
+    <p>Een logboek van Mark uit Heerhugowaard. Wat het einde van de saldering doet met een gewoon huis, met echte rekeningen en Home Assistant.</p></div>
+  <div><ul><li><a href="salderen.html">Salderen</a></li><li><a href="salderen.html#rekenhulp">Rekenhulp</a></li><li><a href="mijn-cijfers.html">Mijn cijfers</a></li></ul></div>
+  <div><ul><li><a href="home-assistant.html">Home Assistant</a></li><li><a href="logboek.html">Logboek</a></li><li><a href="over.html">Over mij</a></li><li><a href="samenwerken.html">Samenwerken</a></li></ul></div>
+  <div class="fine"><span>Geen installaties, geen verkooppraatje. Cookievrij.</span><span>nadesaldering.nl · ontwerp-preview</span></div>
+</footer></div><script src="app.js"></script></body></html>
